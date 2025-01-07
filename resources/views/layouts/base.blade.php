@@ -29,7 +29,7 @@
 
 <i id="scrollToTopBtn" class="fa-solid fa-arrow-up d-flex justify-content-center align-items-center back-to-top"></i>
 
-    <nav class="navbar navbar-expand-lg header-fix navbar-dark text-uppercase">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark text-uppercase">
         <div class="container">
             <a class="navbar-brand logo-stngs" href="#"><img class=" "
                                                              src="{{\Illuminate\Support\Facades\Vite::asset('/resources/images/logo.png')}}">
