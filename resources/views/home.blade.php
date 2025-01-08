@@ -168,52 +168,67 @@
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.
             </p>
-            <button href="#" class="button-2 btn active">READ MORE</button>
+            <button href="#" class="button-2 btn ">READ MORE</button>
         </div>
     </div>
-    <!-- Page Title -->
-    <div class="text-danger text-center fs-1 fw-bold screen-height"> HOME</div>
+    <div class="parallax parallax-1">
+        <div class="content">
+            <h1>Doğa Manzarası</h1>
+            <h3 class="italic-font-style">Fresh and delicious</h3>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="orange-line">
+                </div>
+            </div>
+            <div class="custom-flex mt-4">
+               <div class="custom-image-container">
+                    <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/parallax-pic-1.jpg') }}"
+                         class="custom-image" alt="Custom Image">
+                    <div class="icon-overlay">
+                        <i class="fa-regular fa-images icon-borders" onclick="openGalleryModal()"></i>
+                        <!-- Font Awesome Galeri İkonu -->
+                    </div>
+                </div>
+               <div class="custom-image-container">
+                    <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/parallax-pic-2.jpg') }}"
+                         class="custom-image" alt="Custom Image">
+                    <div class="icon-overlay">
+                        <i class="fa-regular fa-images icon-borders" onclick="openGalleryModal()"></i>
+                        <!-- Font Awesome Galeri İkonu -->
+                    </div>
+                </div>
+               <div class="custom-image-container">
+                    <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/parallax-pic-3.jpg') }}"
+                         class="custom-image" alt="Custom Image">
+                    <div class="icon-overlay">
+                        <i class="fa-regular fa-images icon-borders" onclick="openGalleryModal()"></i>
+                        <!-- Font Awesome Galeri İkonu -->
+                    </div>
+                </div>
+               <div class="custom-image-container">
+                    <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/parallax-pic-4.jpg') }}"
+                         class="custom-image" alt="Custom Image">
+                    <div class="icon-overlay">
+                        <i class="fa-regular fa-images icon-borders" onclick="openGalleryModal()"></i>
+                        <!-- Font Awesome Galeri İkonu -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="normal-content">
+        <h2>Başlık</h2>
+        <h3>The Art of Cookings</h3>
+    </div>
+
+    <div class="parallax parallax-2">
+        <div class="content">
+            <h1>Şehir Manzarası</h1>
+            <p>Farklı bir atmosfer</p>
+        </div>
+    </div>
 
 @endsection
-@push('scripts')
-    <script>
-        // Sayfa tamamen yüklendikten sonra fonksiyonlar çalışacak
-        document.addEventListener("DOMContentLoaded", function () {
 
-            // Video Modal'ını Açma
-            function openVideoModal() {
-                var modal = document.getElementById("videoModal");
-                modal.style.display = "flex";  // Modal'ı açıyoruz
-            }
-
-            // Video Modal'ını Kapatma
-            function closeVideoModal() {
-                var modal = document.getElementById("videoModal");
-                modal.style.display = "none";  // Modal'ı kapatıyoruz
-                var video = document.getElementById("videoElement");
-                video.pause();  // Video durduruluyor
-            }
-
-            // Galeri Modal'ını Açma
-            function openGalleryModal() {
-                var modal = document.getElementById("galleryModal");
-                modal.style.display = "flex";  // Galeri modal'ını açıyoruz
-            }
-
-            // Galeri Modal'ını Kapatma
-            function closeGalleryModal() {
-                var modal = document.getElementById("galleryModal");
-                modal.style.display = "none";  // Galeri modal'ını kapatıyoruz
-            }
-
-            // Global scope'ta fonksiyonlara erişim sağlıyoruz
-            window.openVideoModal = openVideoModal;
-            window.closeVideoModal = closeVideoModal;
-            window.openGalleryModal = openGalleryModal;
-            window.closeGalleryModal = closeGalleryModal;
-
-        });
-    </script>
-@endpush
 
 
