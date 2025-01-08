@@ -79,4 +79,42 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('"footer-copyright" ID\'li bir element bulunamadı!');
     }
 });
+// Video Modal'ını Açma
+function openVideoModal() {
+    var modal = document.getElementById("videoModal");
+    modal.style.display = "flex";
+}
 
+// Video Modal'ını Kapatma
+function closeVideoModal() {
+    var modal = document.getElementById("videoModal");
+    modal.style.display = "none";
+    var video = document.getElementById("videoElement");
+    video.pause();  // Video durduruluyor
+}
+
+// Galeri Modal'ını Açma
+function openGalleryModal() {
+    var modal = document.getElementById("galleryModal");
+    modal.style.display = "flex";
+}
+
+// Galeri Modal'ını Kapatma
+function closeGalleryModal() {
+    var modal = document.getElementById("galleryModal");
+    modal.style.display = "none";
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('#navbarSupportedContent');
+
+    navbarToggler.addEventListener('click', function () {
+        if (navbarCollapse.classList.contains('show')) {
+            navbarCollapse.style.maxHeight = '0';
+        } else {
+            navbarCollapse.style.maxHeight = `${navbarCollapse.scrollHeight}px`;
+        }
+        navbarCollapse.classList.toggle('show');
+    });
+});

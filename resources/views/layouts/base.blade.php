@@ -16,12 +16,11 @@
         @endif
     </title>
     @vite(['resources/js/app.js'])
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
 </head>
 
@@ -44,27 +43,27 @@
                 <ul class="navbar-nav ms-auto header-settings">
                     <li class="nav-item d-flex flex-row">
                         <a class="nav-link header-link-effects menu-borders" href="#">Home</a>
-                        <p class="header-slash ">/</p>
+                        <p class="header-slash select-disable">/</p>
                     </li>
                     <li class="nav-item d-flex flex-row">
                         <a class="nav-link header-link-effects" href="/deneme">Menu</a>
-                        <p class="header-slash">/</p>
+                        <p class="header-slash select-disable">/</p>
                     </li>
                     <li class="nav-item d-flex flex-row">
                         <a class="nav-link header-link-effects"  href="#">About Us</a>
-                        <p class="header-slash ">/</p>
+                        <p class="header-slash select-disable">/</p>
                     </li>
                     <li class="nav-item d-flex flex-row">
                         <a class="nav-link header-link-effects"  href="#">book</a>
-                        <p class="header-slash ">/</p>
+                        <p class="header-slash select-disable">/</p>
                     </li>
                     <li class="nav-item d-flex flex-row">
                         <a class="nav-link header-link-effects"  href="#">events</a>
-                        <p class="header-slash ">/</p>
+                        <p class="header-slash select-disable">/</p>
                     </li>
                     <li class="nav-item d-flex flex-row">
                         <a class="nav-link header-link-effects"  href="#">blog</a>
-                        <p class="header-slash ">/</p>
+                        <p class="header-slash select-disable">/</p>
                     </li>
                     <li class="nav-item d-flex flex-row">
                         <a class="nav-link header-link-effects"  href="#">Contact</a>

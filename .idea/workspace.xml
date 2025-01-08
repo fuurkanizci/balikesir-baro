@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42150285-f51a-4620-9fef-140f86413c61" name="Changes" comment="dfg">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +30,12 @@
     &quot;assignee&quot;: &quot;fuurkanizci&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/fuurkanizci/balikesir-baro.git",
-    "accountId": "eccdaf9f-5027-40d9-9c33-ac39f57f3a86"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/fuurkanizci/balikesir-baro.git&quot;,
+    &quot;accountId&quot;: &quot;eccdaf9f-5027-40d9-9c33-ac39f57f3a86&quot;
   }
-}]]></component>
+}</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/opt/homebrew/Cellar/php/8.3.11/bin/php">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
@@ -201,7 +206,8 @@
       <workItem from="1736175822949" duration="99000" />
       <workItem from="1736175933201" duration="26000" />
       <workItem from="1736241602329" duration="14668000" />
-      <workItem from="1736259760806" duration="298000" />
+      <workItem from="1736259760806" duration="612000" />
+      <workItem from="1736327438476" duration="9616000" />
     </task>
     <task id="LOCAL-00001" summary="dfg">
       <option name="closed" value="true" />

@@ -3,9 +3,11 @@
 * {
     font-family: "Antonio", serif;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 body {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 13px !important;
@@ -15,11 +17,13 @@ body {
     padding: 0 !important;
     background: #121319 !important;
 }
-.header-texts{
+
+.header-texts {
     letter-spacing: 3px;
     font-size: smaller;
     font-weight: bold;
 }
+
 .logo-stngs {
     padding-left: 78px;
     margin-top: 5px;
@@ -34,29 +38,44 @@ body {
 }
 
 .navbar-toggler {
-    z-index: 8888 !important;
+    z-index: 1050 !important;
+}
+.collapse {
+    transition: max-height 0.5s ease, margin 0.5s ease !important;
+    max-height: 0;
+}
+
+/* Menü açıldığında kaydırma animasyonu */
+.navbar-collapse.show {
+    max-height: 300px !important; /* Menüdeki içeriğin boyutuna göre ayarlayın */
+    margin-top: 10px;
 }
 @media (max-width: 768px) {
     .navbar-toggler {
-        z-index: 88888 !important;
+        z-index: 1050 !important;
         border: 0 !important;
+    }
+    .collapse {
+        transition: max-height 0.5s ease, margin 0.5s ease !important;
+        max-height: 0;
+        overflow: hidden;
     }
     .navbar-toggler:hover {
         background-color: white;
         color: black;
     }
-    .navbar{
+    .navbar {
         background-color: #101110;
-
+        z-index: 1050 !important;
     }
     .header-slash {
-    display: none;
+        display: none;
     }
     .logo-stngs {
         padding-left: 5px;
         margin-top: 5px;
     }
-    .menu-borders{
+    .menu-borders {
         border-bottom: 2px solid #c3e92d;
     }
 
@@ -99,13 +118,15 @@ body {
     margin-right: 5rem;
 
 }
-.header-fix{
+
+.header-fix {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1030;
+    z-index: 99999;
 }
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -126,9 +147,6 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
-
-
 
 
 .mySwiper {
@@ -159,7 +177,6 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    z-index: 2;
     max-width: 80%;
 }
 
@@ -206,19 +223,26 @@ body {
 }
 
 .button-2 {
-    text-decoration: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: #CB8F45;
-    color: white;
-    text-align: center;
-    font-size: 1rem;
+    text-decoration: none!important;
+    border-radius: 20px!important;
+    padding: 10px 20px!important;
+    background-color: #CB8F45!important;
+    color: white!important;
+    text-align: center!important;
+    font-size: 1rem!important;
+    &:hover{
+        background-color: white!important;
+        color: black!important;
+        transition: all ease-in .3s!important;
+    }
 }
 
-.button-2:hover {
-    background-color: white;
-    color: black;
+.chef-area{
+    .button-2{
+        padding: 5px 35px!important;
+    }
 }
+
 
 .banner-baslik-yazi {
     letter-spacing: 20px;
@@ -294,22 +318,22 @@ img {
     .footer-settings {
         flex-direction: column;
     }
-    .featured-contents{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-}
-.read-more-links{
-    font-size: large;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #CA8F44;
-    border: 1;
+    .featured-contents {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .read-more-links {
+        font-size: large;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #CA8F44;
+        width: fit-content;
 
-}
+    }
 }
 
 .footer-img {
@@ -319,6 +343,7 @@ img {
 .footer-gap {
     gap: 15rem;
 }
+
 .icons-effects {
     width: 30px;
     height: 30px;
@@ -338,27 +363,29 @@ img {
     color: black;
     border: 0;
 }
-.header-slash{
-    justify-content: center;
-    align-items: center;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    color: #CA8F44;
+
+.header-slash {
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0.5rem 0 !important;
+    padding: 0  0.5rem  !important;
+    color: #CA8F44 !important;
 }
-.header-link-effects{
+
+.header-link-effects {
     color: white !important;
 }
-.header-link-effects:hover{
+
+.header-link-effects:hover {
     color: #CA8F44 !important;
     transition: all ease-in .1s !important;
 }
-.back-to-top{
+
+.back-to-top {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 99999999 !important;
+    z-index: 1050 !important;
 }
 
 .custom-flex {
@@ -366,7 +393,7 @@ img {
     flex-direction: row;
     gap: 2rem;
     justify-content: center;
-    margin-bottom: 13rem;
+    margin-bottom: 80px;
     flex-wrap: wrap;
     margin-top: -50px;
 }
@@ -381,7 +408,7 @@ img {
 .custom-image-container {
     position: relative;
     overflow: hidden;
-    z-index: 99999999 !important;
+    z-index: 1020 !important;
     width: 360px;
 }
 
@@ -391,9 +418,104 @@ img {
     transition: transform 1s ease-in-out;
 }
 
-.custom-group:hover .custom-image {
+/* Hover olduğunda resmin zoom efekti */
+.custom-image-container:hover .custom-image {
     transform: scale(1.1);
 }
+
+/* İkon overlay stil */
+.icon-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah arka plan */
+    opacity: 0; /* Başlangıçta gizli */
+    transition: opacity 0.3s ease; /* Opaklık geçişi */
+    z-index: 1030; /* İkonun resmin üzerinde olması için yüksek z-index */
+}
+
+.icon-borders {
+    border: 1px solid gray;
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+.icon-borders:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* %20 şeffaf beyaz */
+}
+
+.icon-overlay i {
+    color: white; /* İkon rengini beyaz yap */
+    font-size: 2rem; /* İkon boyutunu ayarla */
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* İkonun animasyon geçişi */
+}
+
+/* Hover olduğunda ikonu görünür yap */
+.custom-image-container:hover .icon-overlay {
+    opacity: 1; /* İkonu görünür yap */
+}
+
+.custom-image-container:hover .icon-overlay i {
+    transform: scale(1.2); /* Hoverda ikon büyüsün */
+}
+
+/* Modal (Video ve Galeri Modal'ları için) */
+/* Modal ve içerik stilleri */
+.modal {
+    display: none; /* Başlangıçta gizli */
+    position: fixed;
+    z-index: 1; /* En üstte olacak */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Karartma efekti */
+}
+
+/* Modal içeriği */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Kapatma butonu */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Galeri Fotoğrafları için Stil */
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
 
 .custom-date-badge {
     position: absolute;
@@ -424,7 +546,7 @@ img {
     font-weight: lighter;
     color: black;
     text-decoration: none;
-   
+
 }
 
 .custom-title {
@@ -443,21 +565,83 @@ img {
     color: #6b7280;
     margin-top: 1rem;
 }
-.read-more-links{
+
+.read-more-links {
     font-size: large;
     font-weight: 500;
     color: white;
     text-decoration: none;
     padding-bottom: 5px;
-    border-bottom: 2px solid #CA8F44;
-
-    border: 1;
-
+    border-bottom: 4px solid #CA8F44;
 }
-.featured-contents{
+
+
+.featured-contents {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
 }
 
+.chef-area {
+    width: 100%;
+    height: 550px;
+    background-color: #18191C;
+    display: flex;
+    flex-direction: row;
+}
+
+.chef-picture {
+    justify-content: start;
+    width: 50%;
+    height: 550px;
+}
+
+.chef-picture img {
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.chef-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    margin-left: 7rem;
+}
+
+.chef-description p {
+    max-width: 600px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+    padding-right: 9rem;
+    margin-bottom: 55px;
+}
+.chef-description h1{
+letter-spacing: 10px;
+    font-size: 1.7rem;
+    color: white;
+}
+.chef-description h3 {
+    display: block;
+    letter-spacing: normal;
+
+    font-family: "Allura", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #CA8F44;
+    margin-bottom:2rem;
+    margin-top:2rem ;
+
+}
+
+.orange-line {
+    border-bottom: 2px solid #CA8F44;
+    width: 60px;
+    margin-bottom: 2rem;
+}
