@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 0,
         centeredSlides: true,
-        allowTouchMove:false,
-        loop:true,
+        allowTouchMove: false,
+        loop: true,
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: ".swiper-button-prev",
         },
     });
+    
 
 
 
@@ -118,3 +119,5 @@ document.addEventListener('DOMContentLoaded', function () {
         navbarCollapse.classList.toggle('show');
     });
 });
+
+

@@ -5,7 +5,7 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 body {
@@ -760,9 +760,10 @@ img {
     font-size: large;
     font-weight: 500;
     color: white;
-    text-decoration: none;
-    padding-bottom: 5px;
-    border-bottom: 4px solid #CA8F44;
+    text-decoration: none; 
+    padding-bottom: 2px;
+    border-bottom: 2px solid #CA8F44; 
+    display: inline-block; 
 }
 
 
@@ -887,12 +888,7 @@ img {
 
 }
 
-.normal-content {
-    padding: 50px;
-    text-align: center;
-    background-color: #f4f4f4;
-    color: #333;
-}
+
 
 .menu-1-settings {
     color: white;
@@ -924,4 +920,72 @@ img {
 .screen-height {
     height: 909px;
     background-color: #121217;;
+}
+.nav-tab-settings {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-tab-buttons {
+    background-color: transparent !important; /* Arka plan rengini şeffaf bırakıyoruz */
+    border: 2px solid #ffffff !important; /* Beyaz kenar çizgisi */
+    font-family: "Oswald", sans-serif !important; /* Yazı tipi */
+    letter-spacing: 2px !important; /* Harf aralığı */
+    text-transform: uppercase !important; /* Büyük harf dönüştürme */
+    border-radius: 0 !important; /* Kenarları keskin bırakıyoruz */
+    color: white !important; /* Yazı rengi beyaz */
+    padding: 5px 30px !important; /* İç boşluk ayarı */
+    margin-right: 10px !important; /* Sağ boşluk */
+    cursor: pointer !important; /* İmleç değişikliği */
+
+    /* Kenar çizgilerinin sürekli görünmesi */
+    box-sizing: border-box !important; /* Çizgilerin düzgün görünmesi için */
+}
+
+.nav-tab-buttons:hover {
+    color: #CA8F44 !important; /* Hover durumunda yazı rengi */
+    border-color: #CA8F44 !important; /* Hover durumunda kenar çizgisi rengi */
+}
+.nav-tab-buttons.active {
+    color: #CA8F44 !important; /* Active durumunda yazı rengi */
+    border-color: #CA8F44 !important; /* Active durumunda kenar çizgisi rengi */
+}
+.mini-img {
+    margin-right: 0.75rem; /* Tailwind'deki 'mr-3' */
+    width: 3.5rem; /* Tailwind'deki 'w-14' */
+    height: 3.5rem; /* Tailwind'deki 'h-14' */
+    border-radius: 9999px; /* Tailwind'deki 'rounded-full' */
+    border-width: 2px; /* Tailwind'deki 'border-2' */
+    border-color: #c3e92d; /* Tailwind'deki 'border-[#c3e92d]' */
+}
+.service-text {
+    font-family: "Lora";
+    font-style: italic;
+}
+.deneme{
+font-family: Oswald; 
+ color:white;}
+ .container-padding{
+    padding:60px !important;
+ }
+ .menu-items{
+    width: 25rem;
+    h6 {
+        color: #CA8F44;
+        font-family: "Montserrat";
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+ }
+ .container-padding-bottom{
+    margin-bottom:20rem;
+ }
+ .counting {
+    opacity: 0; /* Başlangıçta sayacları gizle */
+    transition: opacity 0.5s ease-out;
+}
+
+.counting.visible {
+    opacity: 1; /* Görünür hale gelince opacity'yi değiştirme */
 }
