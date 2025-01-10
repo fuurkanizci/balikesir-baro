@@ -7,30 +7,7 @@
     <list default="true" id="42150285-f51a-4620-9fef-140f86413c61" name="Changes" comment="dfg">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/autoprefixer" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/autoprefixer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/browserslist" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/browserslist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/clean-orphaned-assets" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/clean-orphaned-assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/conc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/conc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/concurrently" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/concurrently" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/cssesc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/cssesc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/detect-libc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/detect-libc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/esbuild" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/esbuild" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/glob" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/glob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/jiti" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/jiti" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/nanoid" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/nanoid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/node-which" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/node-which" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/resolve" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/resolve" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rollup" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/rollup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/sass" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/sucrase" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/sucrase" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/sucrase-node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/sucrase-node" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tailwind" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/tailwind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tailwindcss" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/tailwindcss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tree-kill" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/tree-kill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/update-browserslist-db" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/update-browserslist-db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/vite" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/vite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/yaml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/bin/esbuild" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/bin/esbuild" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" afterDir="false" />
@@ -231,7 +208,8 @@
       <workItem from="1736241602329" duration="14668000" />
       <workItem from="1736259760806" duration="612000" />
       <workItem from="1736327438476" duration="15135000" />
-      <workItem from="1736412065724" duration="15004000" />
+      <workItem from="1736412065724" duration="15121000" />
+      <workItem from="1736500740647" duration="14511000" />
     </task>
     <task id="LOCAL-00001" summary="dfg">
       <option name="closed" value="true" />
@@ -277,7 +255,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/layouts/base.blade.php</url>
-          <line>4</line>
+          <line>5</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

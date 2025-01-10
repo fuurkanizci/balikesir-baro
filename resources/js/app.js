@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: ".swiper-button-prev",
         },
     });
-    
+
 
 
 
@@ -119,5 +119,78 @@ document.addEventListener('DOMContentLoaded', function () {
         navbarCollapse.classList.toggle('show');
     });
 });
+
+document.querySelectorAll('.counter').forEach(counter => {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-count');
+                    const count = +counter.innerText;
+
+                    const increment = target / 100; // Hız
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 30); // 30ms
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+                observer.unobserve(counter); // Animasyon tamamlandığında gözlemi durdur
+            }
+        });
+    });
+
+    observer.observe(counter);
+});
+
+
+
+var swiper1 = new Swiper(".mySwiper1", {
+    slidesPerView: 3,  // Masaüstü görünümünde 3 slayt göster
+    spaceBetween: 0, // Slaytlar arasındaki mesafe
+    pagination: {
+        el: ".swiper-pagination1",
+        dynamicBullets: true,
+    },
+    breakpoints: {
+        // Mobil cihazlarda 1 slayt göstermek için
+        768: {
+            slidesPerView: 1,  // 768px ve altındaki cihazlarda 1 slayt göster
+        },
+        1024: {
+            slidesPerView: 3,  // 1024px ve üzeri cihazlarda 3 slayt göster
+        },
+    },
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dateInput = document.getElementById('datepicker');
+
+    // Placeholder'ı manuel olarak formatlıyoruz
+    dateInput.addEventListener('focus', function() {
+        if (this.value === '') {
+            this.setAttribute('placeholder', 'MM/DD/YYYY');  // Placeholder formatı
+        }
+    });
+
+    // Tarih seçildiğinde placeholder'ı temizliyoruz
+    dateInput.addEventListener('blur', function() {
+        if (this.value !== '') {
+            this.setAttribute('placeholder', ''); // Placeholder'ı kaldırıyoruz
+        }
+    });
+});
+
+
+
+
+
+
+
 
 

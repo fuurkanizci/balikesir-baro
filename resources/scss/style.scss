@@ -16,6 +16,7 @@ body {
     line-height: 1.9em !important;
     padding: 0 !important;
     background: #121319 !important;
+    overflow-x: hidden;
 }
 
 .header-texts {
@@ -760,10 +761,10 @@ img {
     font-size: large;
     font-weight: 500;
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
     padding-bottom: 2px;
-    border-bottom: 2px solid #CA8F44; 
-    display: inline-block; 
+    border-bottom: 2px solid #CA8F44;
+    display: inline-block;
 }
 
 
@@ -880,6 +881,7 @@ img {
     background-size: cover;
     background-position: center;
     height: 50vh; /* Parallax için yüksekliği ayarlayın */
+    margin-bottom: 5rem;
 }
 
 .parallax .content img {
@@ -962,9 +964,7 @@ img {
     font-family: "Lora";
     font-style: italic;
 }
-.deneme{
-font-family: Oswald; 
- color:white;}
+
  .container-padding{
     padding:60px !important;
  }
@@ -981,11 +981,151 @@ font-family: Oswald;
  .container-padding-bottom{
     margin-bottom:20rem;
  }
- .counting {
-    opacity: 0; /* Başlangıçta sayacları gizle */
-    transition: opacity 0.5s ease-out;
+
+
+
+
+
+
+
+.events-slider {
+    background-color: transparent !important;
+    padding-bottom:40rem;
+
+    .custom-image-container {
+        position: relative;
+        overflow: hidden;
+        z-index: 1020 !important;
+        width: 100%;
+        height: 111px;
+        padding: 0 15px;
+
+        .custom-image {
+            transition: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // Resmin taşmasını engeller
+        }
+
+        .icon-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0); // Başlangıçta şeffaf
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: none; // Geçiş efekti ekle
+            z-index: 10;
+        }
+
+        &:hover {
+            .icon-overlay {
+                background-color: rgba(0, 0, 0, 0.5); // Hover olduğunda siyah arka plan
+                opacity: 1; // Görünür hale gelir
+            }
+
+            .custom-image {
+                transform: none; // Resmi zoom yap
+            }
+        }
+    }
+
+    .swiper-slide {
+        width: 367px !important;
+        height: 185px;
+        background-color: transparent !important;
+    }
+
+    .text-overlay {
+        padding: 0 15px;
+    }
+}
+.counter-settings{
+    width: 100%;
+    height: 180px;
+    background-color: #CA8F44;
+    color: white;
+
+    .card{
+        color: white;
+        background-color: transparent;
+        border: none;
+        gap: 15px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .counter{
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+}
+.our-menu-settings{
+a{
+    color:white;
+}
+}
+.reservation-form{
+    border: #19191D solid;
+    background-color: #19191D;
+    height: 690px;
+    width: 780px !important;
+    .button-2{
+        &:hover{
+            background-color: #181819;
+            color: white;
+        }
+    }
+    input{
+        background-color: #121316;
+        color: white;
+        border: none;
+        border-radius: 0;
+    }
+    label{
+        color: gray;
+    }
+    .form-control{
+        &:focus{
+            background-color: #121316;
+            color: white;
+            box-shadow: none;
+        }
+         option:checked{
+             background-color: #CA8F44;
+
+         }
+    }
+    select{
+        background-color: #121316;
+        color: white;
+        border: none;
+        border-radius: 0;
+    }
+    textarea{ background-color: #121316;
+        color: white;
+        border: none;
+        border-radius: 0;}
+    .reservation-title-area{
+        h2{
+            letter-spacing: 10px;
+            font-size: 25px;
+            margin-top: 4rem;
+        }
+    }
 }
 
-.counting.visible {
-    opacity: 1; /* Görünür hale gelince opacity'yi değiştirme */
-}
+
+
+
+
+
+
+
+
+
