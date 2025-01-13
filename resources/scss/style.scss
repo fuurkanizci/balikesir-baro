@@ -16,6 +16,7 @@ body {
     line-height: 1.9em !important;
     padding: 0 !important;
     background: #121319 !important;
+    overflow-x: hidden;
 }
 
 .header-texts {
@@ -52,10 +53,47 @@ body {
     margin-top: 10px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 100px) and (max-width: 460px) {
+    .chef-description {
+        margin: 3rem 1rem !important;
+    }
+    .banner-title {
+        letter-spacing: 5px !important;
+        font-size: 25px !important;
+    }
+    .banner-subtitle {
+        font-size: 10px !important;
+        padding: 0 0 !important;
+    }
+    .button-1 {
+        padding: 3px 10px !important;
+        font-size: 10px !important;
+    }
+    .content {
+        .button-2 {
+            padding: 5px 12px !important;
+            font-size: 10px !important;
+        }
+    }
+    .counter-settings {
+        height: 380px !important;
+    }
+    .reservation-form {
+        .inputs-settings {
+            width: 80px !important;
+        }  
+
+    .inputs-gap-padding {
+        gap: 10px !important;
+    }
+    .form-settings {
+        padding: 0 15rem !important;
+    }
+    
+}
 }
 
-@media (max-width: 768px) {
+@media(min-width: 461px) and (max-width: 769px) {
     .navbar-toggler {
         z-index: 1050 !important;
         border: 0 !important;
@@ -79,9 +117,6 @@ body {
     .logo-stngs {
         padding-left: 5px;
         margin-top: 5px;
-    }
-    .menu-borders {
-        border-bottom: 2px solid #c3e92d;
     }
     .footer-settings {
         flex-direction: column !important;
@@ -109,7 +144,7 @@ body {
         }
     }
     .chef-description {
-        margin: 3rem 0 3rem 2rem !important;
+        margin: 3rem 3rem !important;
     }
     .footer-gap {
         display: flex !important;
@@ -137,9 +172,24 @@ body {
         }
 
     }
+    .inputs-settings {
+        width: 110px !important;
+    }
+    .form-settings {
+        padding: 3rem;
+    }
+    .inputs-gap-padding {
+        gap: 1rem;
+        padding: 0 10px;
+    }
+    .counter-settings {
+        height: 400px !important;
+
+    }
+
 }
 
-@media (min-width: 769px) and (max-width: 1045px) {
+@media (min-width: 768px) and (max-width: 1045px) {
     .banner-title {
         letter-spacing: 10px !important;
         font-size: 30px !important;
@@ -158,6 +208,16 @@ body {
         text-align: center;
         font-size: 15px;
     }
+    .inputs-settings {
+        width: 150px !important;
+    }
+    .form-settings {
+        padding: 20px;
+    }
+    .inputs-gap-padding {
+        gap: 1rem;
+        padding: 0 20px 0 20px;
+    }
 
 
     .content {
@@ -175,9 +235,13 @@ body {
 
 }
 
-@media (max-width: 1280px) {
+@media(min-width: 1046px) and (max-width: 1280px) {
     .chef-description p {
         padding-right: 2rem !important;
+    }
+    .banner-title {
+        letter-spacing: 5px !important;
+        font-size: 65px !important;
     }
     .footer-gap {
         display: flex !important;
@@ -215,6 +279,10 @@ body {
         color: white;
         text-align: center;
         font-size: 15px;
+    }
+    .inputs-settings {
+        width: 190px;
+        height: 45px;
     }
 
     .content {
@@ -760,10 +828,10 @@ img {
     font-size: large;
     font-weight: 500;
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
     padding-bottom: 2px;
-    border-bottom: 2px solid #CA8F44; 
-    display: inline-block; 
+    border-bottom: 2px solid #CA8F44;
+    display: inline-block;
 }
 
 
@@ -880,6 +948,7 @@ img {
     background-size: cover;
     background-position: center;
     height: 50vh; /* Parallax için yüksekliği ayarlayın */
+    margin-bottom: 5rem;
 }
 
 .parallax .content img {
@@ -887,7 +956,6 @@ img {
     z-index: 2;
 
 }
-
 
 
 .menu-1-settings {
@@ -921,6 +989,7 @@ img {
     height: 909px;
     background-color: #121217;;
 }
+
 .nav-tab-settings {
     display: flex;
     justify-content: center;
@@ -946,10 +1015,12 @@ img {
     color: #CA8F44 !important; /* Hover durumunda yazı rengi */
     border-color: #CA8F44 !important; /* Hover durumunda kenar çizgisi rengi */
 }
+
 .nav-tab-buttons.active {
     color: #CA8F44 !important; /* Active durumunda yazı rengi */
     border-color: #CA8F44 !important; /* Active durumunda kenar çizgisi rengi */
 }
+
 .mini-img {
     margin-right: 0.75rem; /* Tailwind'deki 'mr-3' */
     width: 3.5rem; /* Tailwind'deki 'w-14' */
@@ -958,18 +1029,19 @@ img {
     border-width: 2px; /* Tailwind'deki 'border-2' */
     border-color: #c3e92d; /* Tailwind'deki 'border-[#c3e92d]' */
 }
+
 .service-text {
     font-family: "Lora";
     font-style: italic;
 }
-.deneme{
-font-family: Oswald; 
- color:white;}
- .container-padding{
-    padding:60px !important;
- }
- .menu-items{
+
+.container-padding {
+    padding: 60px !important;
+}
+
+.menu-items {
     width: 25rem;
+
     h6 {
         color: #CA8F44;
         font-family: "Montserrat";
@@ -977,15 +1049,200 @@ font-family: Oswald;
         font-weight: bold;
         margin-top: 10px;
     }
- }
- .container-padding-bottom{
-    margin-bottom:20rem;
- }
- .counting {
-    opacity: 0; /* Başlangıçta sayacları gizle */
-    transition: opacity 0.5s ease-out;
 }
 
-.counting.visible {
-    opacity: 1; /* Görünür hale gelince opacity'yi değiştirme */
+.container-padding-bottom {
+    margin-bottom: 20rem;
+}
+    .events-slider {
+        background-color: transparent !important;
+        display: flex;
+        justify-content: center;
+        width: 337px; /* Slider'ın tüm genişliği kaplamasını sağlarız */
+        .icon-overlay {
+            font-size: 1rem !important;
+        }
+        .events-icons-settings{
+            margin-top:4px;
+            margin-right: 4px;
+            color:#CA8F44 ;
+            font-size: 15px;
+        
+        }
+        .icons-description{
+            padding: 0 4px;
+            font-size: 13px;
+            font-family: "Montserrat";
+            font-size: 12px;
+        }
+    a{
+        color: white;
+        margin: 10px 0;
+    }
+        .custom-image-container {
+            position: relative;
+            overflow: hidden;
+            z-index: 1020 !important;
+            width: 337px;
+            height: 111px; /* Resim alanının boyutunu tam olarak dolduracak şekilde ayarlıyoruz */
+
+            .custom-image {
+                transition: none;
+                width: 100%;
+                height: 100%; /* Resmin tüm alanı kaplamasını sağlarız */
+                object-fit: cover; /* Resmin alanı kaplayacak şekilde kesilmesini sağlar */
+            }
+            &:hover {
+                .icon-overlay {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    opacity: 1;
+                }
+
+                .custom-image {
+                    transform: none;
+                }
+            }
+        }
+        .swiper-wrapper{
+            padding-bottom: 4rem;
+        }
+        .swiper-slide {
+            height: 185px;
+            background-color: transparent !important;
+
+            /* İçeriği tam ortalamak için */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon-overlay i {
+                font-size: 1rem; /* İkon boyutunu ayarla */
+            }
+        }
+    }
+
+    .swiper1 {
+        &.mySwiper1 {
+            display: flex;
+            flex-direction: row;
+            width: 100%; /* Slider genişliğini container'a göre ayarlıyoruz */
+
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .swiper-pagination {
+                margin-top: 10px;
+            }
+        }
+    }
+
+
+
+    .counter-settings {
+        width: 100%;
+        height: 180px;
+        background-color: #CA8F44;
+        color: white;
+
+        .card {
+            color: white;
+            background-color: transparent;
+            border: none;
+            gap: 15px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        .counter {
+            font-size: 2rem;
+            font-weight: bolder;
+        }
+    }
+    .our-menu-settings {
+        a {
+            color: white;
+        }
+    }
+    
+
+.reservation-form {
+    .inputs-settings {
+        width: 190px;
+        height: 45px;
+    }
+
+    .form-settings {
+        padding: 30px;
+    }
+    .form-control {
+        height: 45px !important;
+
+    }
+
+    .inputs-gap-padding {
+        gap: 3rem;
+        padding: 0 30px 0 30px;
+    }
+    border: #19191D solid;
+    background-color: #19191D;
+    margin-bottom: 60px;
+    width: 780px !important;
+    height: 43rem;
+    .button-2 {
+        &:hover {
+            background-color: #181819;
+            color: white;
+        }
+    }
+
+    input {
+        background-color: #121316;
+        color: white;
+        border: none;
+        border-radius: 0;
+    }
+
+    label {
+        color: gray;
+    }
+
+    .form-control {
+        &:focus {
+            background-color: #121316;
+            color: white;
+            box-shadow: none;
+        }
+
+        option:checked {
+            background-color: #CA8F44;
+
+        }
+    }
+
+    select {
+        background-color: #121316;
+        color: white;
+        border: none;
+        border-radius: 0;
+    }
+
+    textarea {
+        background-color: #121316;
+        color: white;
+        border: none;
+        border-radius: 0;
+    }
+
+    .reservation-title-area {
+        h2 {
+            letter-spacing: 10px;
+            font-size: 25px;
+            margin-top: 4rem;
+        }
+    }
 }

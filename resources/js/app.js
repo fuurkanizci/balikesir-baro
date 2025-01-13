@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: ".swiper-button-prev",
         },
     });
-    
+
 
 
 
@@ -119,5 +119,84 @@ document.addEventListener('DOMContentLoaded', function () {
         navbarCollapse.classList.toggle('show');
     });
 });
+
+document.querySelectorAll('.counter').forEach(counter => {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-count');
+                    const count = +counter.innerText;
+
+                    const increment = target / 100; // Hız
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 30); // 30ms
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+                observer.unobserve(counter); // Animasyon tamamlandığında gözlemi durdur
+            }
+        });
+    });
+
+    observer.observe(counter);
+});
+
+
+
+const swiper = new Swiper('.mySwiper1', {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        320: { // 320px ve üstü
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        640: { // 640px ve üstü
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        1024: { // 1024px ve üstü
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+    },
+});
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dateInput = document.getElementById('datepicker');
+
+    dateInput.addEventListener('focus', function() {
+        if (this.value === '') {
+            this.setAttribute('placeholder', '07/06/2003');
+        }
+    });
+
+    dateInput.addEventListener('blur', function() {
+        if (this.value !== '') {
+            this.setAttribute('placeholder', '');
+        }
+    });
+});
+
+
+
+
+
+
+
 
 
