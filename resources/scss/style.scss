@@ -81,9 +81,6 @@ body {
         padding-left: 5px;
         margin-top: 5px;
     }
-    .menu-borders {
-        border-bottom: 2px solid #c3e92d;
-    }
     .footer-settings {
         flex-direction: column !important;
     }
@@ -138,6 +135,21 @@ body {
         }
 
     }
+    .inputs-settings {
+        width: 110px !important;
+    }
+    .form-settings {
+        padding: 10px;
+    }
+    .inputs-gap-padding {
+        gap: 1rem;
+        padding: 0 10px 0 10px;
+    }
+    .counter-settings {
+        height: 400px !important;
+
+    }
+
 }
 
 @media (min-width: 769px) and (max-width: 1045px) {
@@ -158,6 +170,16 @@ body {
         color: white;
         text-align: center;
         font-size: 15px;
+    }
+    .inputs-settings {
+        width: 150px;
+    }
+    .form-settings {
+        padding: 20px;
+    }
+    .inputs-gap-padding {
+        gap: 1rem;
+        padding: 0 20px 0 20px;
     }
 
 
@@ -891,7 +913,6 @@ img {
 }
 
 
-
 .menu-1-settings {
     color: white;
     display: flex;
@@ -923,6 +944,7 @@ img {
     height: 909px;
     background-color: #121217;;
 }
+
 .nav-tab-settings {
     display: flex;
     justify-content: center;
@@ -948,10 +970,12 @@ img {
     color: #CA8F44 !important; /* Hover durumunda yazı rengi */
     border-color: #CA8F44 !important; /* Hover durumunda kenar çizgisi rengi */
 }
+
 .nav-tab-buttons.active {
     color: #CA8F44 !important; /* Active durumunda yazı rengi */
     border-color: #CA8F44 !important; /* Active durumunda kenar çizgisi rengi */
 }
+
 .mini-img {
     margin-right: 0.75rem; /* Tailwind'deki 'mr-3' */
     width: 3.5rem; /* Tailwind'deki 'w-14' */
@@ -960,16 +984,19 @@ img {
     border-width: 2px; /* Tailwind'deki 'border-2' */
     border-color: #c3e92d; /* Tailwind'deki 'border-[#c3e92d]' */
 }
+
 .service-text {
     font-family: "Lora";
     font-style: italic;
 }
 
- .container-padding{
-    padding:60px !important;
- }
- .menu-items{
+.container-padding {
+    padding: 60px !important;
+}
+
+.menu-items {
     width: 25rem;
+
     h6 {
         color: #CA8F44;
         font-family: "Montserrat";
@@ -977,155 +1004,217 @@ img {
         font-weight: bold;
         margin-top: 10px;
     }
- }
- .container-padding-bottom{
-    margin-bottom:20rem;
- }
+}
+
+.container-padding-bottom {
+    margin-bottom: 20rem;
+}
+    .events-slider {
+        background-color: transparent !important;
+        padding-bottom: 10rem;
+        display: flex;
+        justify-content: center;
+        width: 337px; /* Slider'ın tüm genişliği kaplamasını sağlarız */
+        .icon-overlay {
+            font-size: 1rem !important;
+        }
+    a{
+        color: white;
+        margin: 10px 0;
+    }
+        .custom-image-container {
+            position: relative;
+            overflow: hidden;
+            z-index: 1020 !important;
+            width: 337px;
+            height: 111px; /* Resim alanının boyutunu tam olarak dolduracak şekilde ayarlıyoruz */
+
+            .custom-image {
+                transition: none;
+                width: 100%;
+                height: 100%; /* Resmin tüm alanı kaplamasını sağlarız */
+                object-fit: cover; /* Resmin alanı kaplayacak şekilde kesilmesini sağlar */
+            }
 
 
+            &:hover {
+                .icon-overlay {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    opacity: 1;
+                }
 
-
-
-
-
-.events-slider {
-    background-color: transparent !important;
-    padding-bottom:4rem;
-
-    .custom-image-container {
-        position: relative;
-        overflow: hidden;
-        z-index: 1020 !important;
-        width: 100%;
-        height: 111px;
-        padding: 0 15px;
-
-        .custom-image {
-            transition: none;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; // Resmin taşmasını engeller
+                .custom-image {
+                    transform: none;
+                }
+            }
         }
 
-        .icon-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0); // Başlangıçta şeffaf
+        .swiper-slide {
+            height: 185px;
+            background-color: transparent !important;
+
+            /* İçeriği tam ortalamak için */
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: none; // Geçiş efekti ekle
-            z-index: 10;
+            .icon-overlay i {
+                font-size: 1rem; /* İkon boyutunu ayarla */
+            }
         }
 
-        &:hover {
-            .icon-overlay {
-                background-color: rgba(0, 0, 0, 0.5); // Hover olduğunda siyah arka plan
-                opacity: 1; // Görünür hale gelir
-            }
-
-            .custom-image {
-                transform: none; // Resmi zoom yap
-            }
+        .text-overlay {
         }
     }
 
-    .swiper-slide {
-        width: 367px !important;
-        height: 185px;
-        background-color: transparent !important;
+    .swiper1 {
+        &.mySwiper1 {
+            display: flex;
+            flex-direction: row;
+            width: 100%; /* Slider genişliğini container'a göre ayarlıyoruz */
+
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .swiper-pagination {
+                margin-top: 10px;
+            }
+        }
     }
 
-    .text-overlay {
-        padding: 0 15px;
+    @media (min-width: 768px) {
+        .swiper1 {
+            &.mySwiper1 {
+                .swiper-slide {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
     }
-}
-.counter-settings{
-    width: 100%;
-    height: 180px;
-    background-color: #CA8F44;
-    color: white;
 
-    .card{
+    .counter-settings {
+        width: 100%;
+        height: 180px;
+        background-color: #CA8F44;
         color: white;
-        background-color: transparent;
-        border: none;
-        gap: 15px;
+
+        .card {
+            color: white;
+            background-color: transparent;
+            border: none;
+            gap: 15px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        .counter {
+            font-size: 2rem;
+            font-weight: bolder;
+        }
     }
-    p{
-        font-size: 10px;
-    }
-    .counter{
-        font-size: 2rem;
-        font-weight: bolder;
-    }
-}
-.our-menu-settings{
-a{
-    color:white;
-}
-}
-.reservation-form{
-    border: #19191D solid;
-    background-color: #19191D;
-    height: 690px;
-    width: 780px !important;
-    .button-2{
-        &:hover{
-            background-color: #181819;
+    .our-menu-settings {
+        a {
             color: white;
         }
     }
-    input{
-        background-color: #121316;
-        color: white;
-        border: none;
-        border-radius: 0;
-    }
-    label{
-        color: gray;
-    }
-    .form-control{
-        &:focus{
+    .reservation-form {
+        border: #19191D solid;
+        background-color: #19191D;
+        margin-bottom: 60px;
+        width: 780px !important;
+        height: 43rem;
+        .button-2 {
+            &:hover {
+                background-color: #181819;
+                color: white;
+            }
+        }
+
+        input {
             background-color: #121316;
             color: white;
-            box-shadow: none;
+            border: none;
+            border-radius: 0;
         }
-         option:checked{
-             background-color: #CA8F44;
 
-         }
-    }
-    select{
-        background-color: #121316;
-        color: white;
-        border: none;
-        border-radius: 0;
-    }
-    textarea{ background-color: #121316;
-        color: white;
-        border: none;
-        border-radius: 0;}
-    .reservation-title-area{
-        h2{
-            letter-spacing: 10px;
-            font-size: 25px;
-            margin-top: 4rem;
+        label {
+            color: gray;
+        }
+
+        .form-control {
+            &:focus {
+                background-color: #121316;
+                color: white;
+                box-shadow: none;
+            }
+
+            option:checked {
+                background-color: #CA8F44;
+
+            }
+        }
+
+        select {
+            background-color: #121316;
+            color: white;
+            border: none;
+            border-radius: 0;
+        }
+
+        textarea {
+            background-color: #121316;
+            color: white;
+            border: none;
+            border-radius: 0;
+        }
+
+        .reservation-title-area {
+            h2 {
+                letter-spacing: 10px;
+                font-size: 25px;
+                margin-top: 4rem;
+            }
         }
     }
+    .inputs-settings {
+        width: 190px;
+        height: 45px;
+    }
+
+    .form-settings {
+        padding: 30px;
+    }
+    .form-control {
+        height: 45px !important;
+
+    }
+
+    .inputs-gap-padding {
+        gap: 3rem;
+        padding: 0 30px 0 30px;
+    }
+.events-icons-settings{
+    margin-top:4px;
+    margin-right: 4px;
+    color:#CA8F44 ;
+    font-size: 15px;
+
 }
 
 
 
-
-
-
-
+.icons-description{
+    padding: 0 4px;
+    font-size: 13px;
+    font-family: "Montserrat";
+    font-size: 12px;
+}
 
 
 

@@ -148,40 +148,31 @@ document.querySelectorAll('.counter').forEach(counter => {
 
 
 
-var swiper1 = new Swiper(".mySwiper1", {
-    slidesPerView: 3,  // Masaüstü görünümünde 3 slayt göster
-    spaceBetween: 0, // Slaytlar arasındaki mesafe
+const swiper = new Swiper('.mySwiper1', {
+    slidesPerView: 3,
+    spaceBetween: 0,
     pagination: {
-        el: ".swiper-pagination1",
-        dynamicBullets: true,
-    },
-    breakpoints: {
-        // Mobil cihazlarda 1 slayt göstermek için
-        768: {
-            slidesPerView: 1,  // 768px ve altındaki cihazlarda 1 slayt göster
-        },
-        1024: {
-            slidesPerView: 3,  // 1024px ve üzeri cihazlarda 3 slayt göster
-        },
+        el: '.swiper-pagination',
+        clickable: true,
     },
 });
+
+
 
 
 
 document.addEventListener('DOMContentLoaded', function() {
     const dateInput = document.getElementById('datepicker');
 
-    // Placeholder'ı manuel olarak formatlıyoruz
     dateInput.addEventListener('focus', function() {
         if (this.value === '') {
-            this.setAttribute('placeholder', 'MM/DD/YYYY');  // Placeholder formatı
+            this.setAttribute('placeholder', '07/06/2003');
         }
     });
 
-    // Tarih seçildiğinde placeholder'ı temizliyoruz
     dateInput.addEventListener('blur', function() {
         if (this.value !== '') {
-            this.setAttribute('placeholder', ''); // Placeholder'ı kaldırıyoruz
+            this.setAttribute('placeholder', '');
         }
     });
 });

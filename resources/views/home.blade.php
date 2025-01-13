@@ -703,7 +703,7 @@
     <section id="section6">
         <div class="parallax parallax-2">
 
-            <form class="container reservation-form">
+            <form class="container reservation-form d-flex flex-column justify-content-center ">
                 <div class="text-center">
                     <div class="reservation-title-area">
                         <h2 class="text-uppercase">Book a Table</h2>
@@ -713,38 +713,43 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Tarih</label>
-                    <input type="date" id="datepicker" class="form-control" placeholder="07/06/2003">
-                    <label for="exampleFormControlInput2">Saat</label>
-                    <input type="time" class="form-control">
+                <div class="form-setting">
+                    <div class="form-group d-flex flex-row justify-content-center inputs-gap-padding">
+                        <div>
+                            <label for="exampleFormControlInput1">Tarih</label>
+                            <input type="date" id="datepicker" class=" inputs-settings"
+                                   placeholder="07/06/2003">
+                        </div>
+                        <div><label for="exampleFormControlInput2">Saat</label>
+                            <input type="time" class=" inputs-settings"></div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Kişi Sayısı</label>
+                            <select class=" inputs-settings" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="p-4 ">
+                        <div class="form-group mb-4">
+                            <label for="inputFullName">İsim Soyisim</label>
+                            <input type="text" class="form-control" id="inputFullName">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="inputEmail">E-Mail</label>
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="inputPhoneNumber">Telefon Numarası</label>
+                            <input type="tel" class="form-control" id="inputPhoneNumber">
+                        </div>
+                        <div class="text-center mt-4 ">
+                            <a href="#" class="button-2">Rezervasyon Oluştur</a></div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Masa Numarası</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect2">Kişi Sayısı</label>
-                    <select multiple class="form-control" id="exampleFormControlSelect2">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">İsim Soyisim</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div><div class="text-center mt-4">
-                <a href="#" class="button-2">Rezervasyon Oluştur</a></div>
-
             </form>
         </div>
     </section>
@@ -759,145 +764,112 @@
                     <div class="orange-line"></div>
                 </div>
             </div>
-            <div class="swiper mySwiper1">
-                <div class="swiper-wrapper">
-                    <div class="w-100 d-flex justify-content-between flex-column">
-                        <div class="swiper-slide">
-                            <div class="custom-image-container">
-                                <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
-                                     class="custom-image" alt="Custom Image">
-                                <div class="icon-overlay">
-                                    <i class="fa-solid fa-link icon-borders" onclick="openVideoModal()"></i>
-                                    <!-- Font Awesome Video İkonu -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-overlay">
-                            <p class="slider-title">Today's Special</p>
-                            <p class="slider-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <a href="#" class="read-more">READ MORE</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="custom-image-container">
-                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-2.jpg') }}"
-                                 class="custom-image" alt="Custom Image">
-                            <div class="icon-overlay">
-                                <i class="fa-solid fa-link icon-borders" onclick="openVideoModal()"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="custom-image-container">
-                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-3.jpg') }}"
-                                 class="custom-image" alt="Custom Image">
-                            <div class="icon-overlay">
-                                <i class="fa-solid fa-link icon-borders" onclick="openVideoModal()"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
+        </div>
+        <div class="swiper mySwiper1 container events-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column">
                         <div class="custom-image-container">
                             <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
                                  class="custom-image" alt="Custom Image">
                             <div class="icon-overlay">
-                                <i class="fa-solid fa-link icon-borders" onclick="openVideoModal()"></i>
+                                <i class="fa-solid fa-chain icon-borders" onclick="openVideoModal()"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="custom-image-container">
-                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
-                                 class="custom-image" alt="Custom Image">
-                            <div class="icon-overlay">
-                                <i class="fa-solid fa-link icon-borders" onclick="openVideoModal()"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="custom-image-container">
-                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
-                                 class="custom-image" alt="Custom Image">
-                            <div class="icon-overlay">
-                                <i class="fa-solid fa-link icon-borders" onclick="openVideoModal()"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="custom-image-container">
-                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
-                                 class="custom-image" alt="Custom Image">
-                            <div class="icon-overlay">
-                                <i class="fa-solid fa-link icon-borders" onclick="openVideoModal()"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="custom-image-container">
-                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
-                                 class="custom-image" alt="Custom Image">
-                            <div class="icon-overlay">
-                                <i class="fa-solid fa-link icon-borders" onclick="openVideoModal()"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="custom-image-container">
-                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
-                                 class="custom-image" alt="Custom Image">
-                            <div class="icon-overlay">
-                                <i class="fa-solid fa-link icon-borders" onclick="openVideoModal()"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="custom-image-container">
-                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
-                                 class="custom-image" alt="Custom Image">
-                            <div class="icon-overlay">
-                                <i class="fa-solid fa-link icon-borders" onclick="openVideoModal()"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="custom-image-container">
-                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
-                                 class="custom-image" alt="Custom Image">
-                            <div class="icon-overlay">
-                                <i class="fa-solid fa-link icon-borders" onclick="openVideoModal()"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="custom-image-container">
-                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
-                                 class="custom-image" alt="Custom Image">
-                            <div class="icon-overlay">
-                                <i class="fa-solid fa-link icon-borders" onclick="openVideoModal()"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="custom-image-container">
-                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
-                                 class="custom-image" alt="Custom Image">
-                            <div class="icon-overlay">
-                                <i class="fa-solid fa-link icon-borders" onclick="openVideoModal()"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="custom-image-container">
-                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
-                                 class="custom-image" alt="Custom Image">
-                            <div class="icon-overlay">
-                                <i class="fa-solid fa-link icon-borders" onclick="openVideoModal()"></i>
-                            </div>
+                        <a href="" class="text-start">Barbeque Party</a>
+                        <div class="d-flex flex-row gap-4">
+                           <div class="d-flex flex-row"> <i class="fa-solid fa-calendar-days events-icons-settings"></i><p class="icons-description">15 June 2017</p></div>
+                            <div class="d-flex flex-row"> <i class="fa-solid fa-clock events-icons-settings"></i><p class="icons-description">12:00-12:30</p></div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination swiper-pagination1 pt-3"></div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column">
+                        <div class="custom-image-container">
+                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
+                                 class="custom-image" alt="Custom Image">
+                            <div class="icon-overlay">
+                                <i class="fa-solid fa-chain icon-borders" onclick="openVideoModal()"></i>
+                            </div>
+                        </div>
+                        <a href="" class="text-start">Barbeque Party</a>
+                        <div class="d-flex flex-row gap-4">
+                            <div class="d-flex flex-row"> <i class="fa-solid fa-calendar-days events-icons-settings"></i><p class="icons-description">15 June 2017</p></div>
+                            <div class="d-flex flex-row"> <i class="fa-solid fa-clock events-icons-settings"></i><p class="icons-description">12:00-12:30</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column">
+                        <div class="custom-image-container">
+                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
+                                 class="custom-image" alt="Custom Image">
+                            <div class="icon-overlay">
+                                <i class="fa-solid fa-chain icon-borders" onclick="openVideoModal()"></i>
+                            </div>
+                        </div>
+                        <a href="" class="text-start">Barbeque Party</a>
+                        <div class="d-flex flex-row gap-4">
+                            <div class="d-flex flex-row"> <i class="fa-solid fa-calendar-days events-icons-settings"></i><p class="icons-description">15 June 2017</p></div>
+                            <div class="d-flex flex-row"> <i class="fa-solid fa-clock events-icons-settings"></i><p class="icons-description">12:00-12:30</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column">
+                        <div class="custom-image-container">
+                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
+                                 class="custom-image" alt="Custom Image">
+                            <div class="icon-overlay">
+                                <i class="fa-solid fa-chain icon-borders" onclick="openVideoModal()"></i>
+                            </div>
+                        </div>
+                        <a href="" class="text-start">Barbeque Party</a>
+                        <div class="d-flex flex-row gap-4">
+                            <div class="d-flex flex-row"> <i class="fa-solid fa-calendar-days events-icons-settings"></i><p class="icons-description">15 June 2017</p></div>
+                            <div class="d-flex flex-row"> <i class="fa-solid fa-clock events-icons-settings"></i><p class="icons-description">12:00-12:30</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column">
+                        <div class="custom-image-container">
+                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
+                                 class="custom-image" alt="Custom Image">
+                            <div class="icon-overlay">
+                                <i class="fa-solid fa-chain icon-borders" onclick="openVideoModal()"></i>
+                            </div>
+                        </div>
+                        <a href="" class="text-start">Barbeque Party</a>
+                        <div class="d-flex flex-row gap-4">
+                            <div class="d-flex flex-row"> <i class="fa-solid fa-calendar-days events-icons-settings"></i><p class="icons-description">15 June 2017</p></div>
+                            <div class="d-flex flex-row"> <i class="fa-solid fa-clock events-icons-settings"></i><p class="icons-description">12:00-12:30</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column">
+                        <div class="custom-image-container">
+                            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
+                                 class="custom-image" alt="Custom Image">
+                            <div class="icon-overlay">
+                                <i class="fa-solid fa-chain icon-borders" onclick="openVideoModal()"></i>
+                            </div>
+                        </div>
+                        <a href="" class="text-start">Barbeque Party</a>
+                        <div class="d-flex flex-row gap-4">
+                            <div class="d-flex flex-row"> <i class="fa-solid fa-calendar-days events-icons-settings"></i><p class="icons-description">15 June 2017</p></div>
+                            <div class="d-flex flex-row"> <i class="fa-solid fa-clock events-icons-settings"></i><p class="icons-description">12:00-12:30</p></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
     </section>
 
@@ -909,28 +881,24 @@
         <div class="container">
             <div class="counter-contents">
                 <div class="row text-center">
-                    <!-- Counter 1 -->
                     <div class="col-md-3 ">
                         <div class="card">
                             <div id="counter1" class="counter" data-count="1658">0</div>
                             <p>YAZILAN KOD SATIRI</p>
                         </div>
                     </div>
-                    <!-- Counter 2 -->
                     <div class="col-md-3">
                         <div class="card">
                             <div id="counter2" class="counter" data-count="16">0</div>
                             <p>KAÇ KÜTÜPHANE KULLANILDI</p>
                         </div>
                     </div>
-                    <!-- Counter 3 -->
                     <div class="col-md-3">
                         <div class="card">
                             <div id="counter3" class="counter" data-count="35">0</div>
                             <p>KAÇ GÜNDE BİTTİ</p>
                         </div>
                     </div>
-                    <!-- Counter 4 -->
                     <div class="col-md-3">
                         <div class="card">
                             <div id="counter4" class="counter" data-count="84">0</div>
