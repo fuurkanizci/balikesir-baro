@@ -5,14 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42150285-f51a-4620-9fef-140f86413c61" name="Changes" comment="dfg">
+      <change afterPath="$PROJECT_DIR$/resources/admin/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/admin/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/admin/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/admin/scss/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/admin/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/aboutUs/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/swiper.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/swiper.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-PZ5AY32C.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-PZ5AY32C.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/swiper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,6 +194,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/admin" />
       <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/resources/views" />
     </key>
@@ -212,7 +231,8 @@
       <workItem from="1736327438476" duration="15135000" />
       <workItem from="1736412065724" duration="15121000" />
       <workItem from="1736500740647" duration="14762000" />
-      <workItem from="1736761223212" duration="15271000" />
+      <workItem from="1736761223212" duration="15416000" />
+      <workItem from="1736849833564" duration="11440000" />
     </task>
     <task id="LOCAL-00001" summary="dfg">
       <option name="closed" value="true" />

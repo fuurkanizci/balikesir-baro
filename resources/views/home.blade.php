@@ -94,6 +94,8 @@
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     </p>
 
+
+
                     <div class="">
                         <a class="read-more-links " href="">
                             READ MORE
@@ -173,20 +175,10 @@
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6">
                     <div class="chef-description">
-                        <h1>WELCOME TO DELIZUS</h1>
-                        <h3>The Art of Cookings</h3>
+                        <div class="chef-area-title">{{$aboutUs->title}}</div>
+                        <div class="chef-area-subtitle">{{$aboutUs->sub_title}}</div>
                         <div class="orange-line"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut
-                            aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum
-                            dolore eu
-                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                            officia
-                            deserunt mollit anim id est laborum.
+                        <p>{{$aboutUs->description}}
                         </p>
                         <button href="#" class="button-2 btn ">READ MORE</button>
                     </div>

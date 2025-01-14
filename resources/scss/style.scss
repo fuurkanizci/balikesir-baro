@@ -81,7 +81,7 @@ body {
     .reservation-form {
         .inputs-settings {
             width: 80px !important;
-        }  
+        }
 
     .inputs-gap-padding {
         gap: 10px !important;
@@ -89,7 +89,7 @@ body {
     .form-settings {
         padding: 0 15rem !important;
     }
-    
+
 }
 }
 
@@ -303,6 +303,20 @@ body {
         background-color: #18191C;
         display: flex;
         flex-direction: column;
+        .chef-area-title{
+            letter-spacing: 5px;
+            font-size: 1.7rem;
+            color: white;
+        }
+        .chef-area-subtitle{
+            display: block;
+            letter-spacing: normal;
+            font-family: "Allura", serif;
+            font-weight: 400;
+            font-style: italic;
+            color: #CA8F44;
+            margin: 2rem 0;
+        }
     }
 
     .chef-picture {
@@ -327,21 +341,6 @@ body {
         text-align: start;
         margin-left: 7rem;
 
-        h1 {
-            letter-spacing: 10px;
-            font-size: 1.7rem;
-            color: white;
-        }
-
-        h3 {
-            display: block;
-            letter-spacing: normal;
-            font-family: "Allura", serif;
-            font-weight: 400;
-            font-style: italic;
-            color: #CA8F44;
-            margin: 2rem 0;
-        }
 
         p {
             max-width: 600px;
@@ -845,6 +844,7 @@ img {
 .chef-area {
     width: 100%;
     background-color: #18191C;
+
 }
 
 .chef-picture {
@@ -867,22 +867,22 @@ img {
     align-items: start;
     text-align: start;
     margin: 3rem 0 3rem 7rem;
-
-    h1 {
-        letter-spacing: 10px;
+    .chef-area-title{
+        letter-spacing: 5px;
         font-size: 1.7rem;
         color: white;
     }
-
-    h3 {
+    .chef-area-subtitle{
         display: block;
         letter-spacing: normal;
         font-family: "Allura", serif;
         font-weight: 400;
+        font-size: 1.7rem;
         font-style: italic;
         color: #CA8F44;
         margin: 2rem 0;
     }
+
 
     p {
         max-width: 600px;
@@ -1067,7 +1067,7 @@ img {
             margin-right: 4px;
             color:#CA8F44 ;
             font-size: 15px;
-        
+
         }
         .icons-description{
             padding: 0 4px;
@@ -1168,7 +1168,7 @@ img {
             color: white;
         }
     }
-    
+
 
 .reservation-form {
     .inputs-settings {
