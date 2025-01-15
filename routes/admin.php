@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AboutUsController;
+use App\Http\Controllers\Admin\BannersController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\LogoutController;
 use Illuminate\Support\Facades\Route;
@@ -20,5 +21,6 @@ Route::prefix('admin')->name('admin.')->group(function () {
         })->name('dashboard');
 
         Route::resource("aboutUs", AboutUsController::class);
+        Route::resource("banner", BannersController::class);
     });
 });

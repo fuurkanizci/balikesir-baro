@@ -13,6 +13,12 @@
                     <span>{{__('Hakkımızda')}}</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('admin.banners.index')}}">
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                    <span>{{__('Banner')}}</span>
+                </a>
+            </li>
 
         </ul>
     </div>
