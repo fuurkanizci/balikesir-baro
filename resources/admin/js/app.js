@@ -15,3 +15,9 @@ $.ajaxSetup({
     },
     error: window.ajaxDefaultErrorCallback
 });
+window.dropzoneAddedFilesEventHandler = function () {
+    document.querySelector('form button[type="submit"]').setAttribute('disabled', 'disabled');
+}
+window.dropzoneQueueCompleteEventHandler = function () {
+    document.querySelector('form button[type="submit"]').removeAttribute('disabled');
+}

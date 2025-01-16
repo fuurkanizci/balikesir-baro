@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Banners;
+use App\Models\Banner;
 use App\Models\AboutUs;
 use Illuminate\Http\Request;
 
@@ -9,12 +9,11 @@ class HomeController extends Controller
 {
     public function index(){
         $aboutUs = AboutUs::query()->firstOrFail();
+        $banners = Banner::query()->get();
+
         return view('home', [
             'aboutUs' => $aboutUs,
-        ]);
-        $banners = Banners::query()->first();
-        return view('home', [
-            'banners' => $banners,
+            'banners' => $banners
         ]);
     }
     public function deneme(){

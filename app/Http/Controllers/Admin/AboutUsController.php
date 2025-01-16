@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Helpers\Helper;
 use App\Http\Controllers\Controller;
 use App\Models\AboutUs;
 use Illuminate\Http\Request;
@@ -58,6 +59,11 @@ class AboutUsController extends Controller
     {
         $aboutUs = AboutUs::findOrFail($aboutUs);
         $aboutUs->update($request->all());
+        if ($request->has('logo') && count($request->logo) == 1) {
+            foreach ($request->logo as $document) {
+                Helper::handleUploadedSingleFile($aboutUs, $document, 'logo');
+            }
+        }
     }
 
     /**

@@ -2,7 +2,7 @@
 import 'swiper/swiper-bundle.min.css';
 import Swiper, { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.min.css'; // Swiper CSS dosyasını dahil ettiğinizden emin olun
-
+import 'magnific-popup';
 Swiper.use([Navigation, Pagination]);
 
 import './bootstrap';
@@ -192,8 +192,36 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+$(document).ready(function() {
+    $('.image-link').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1]
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function(item) {
+                return 'FGM';
+            }
+        }
+    });
+});
 
+$(document).ready(function() {
+    $('.popup-gallery').magnificPopup({
+        delegate: 'a', // 'a' etiketleri üzerinde çalış
+        type: 'image',
+        gallery: {
+            enabled: false // Galeri desteğini aç
+        }
+    });
 
+});
 
 
 

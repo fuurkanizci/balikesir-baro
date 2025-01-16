@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Banners;
+use App\Models\Banner;
 use Illuminate\Http\Request;
 
 class BannersController extends Controller
@@ -13,9 +13,9 @@ class BannersController extends Controller
      */
     public function index()
     {
-        $banners = Banners::query()->firstOrFail();
+        $banner = Banner::query()->firstOrFail();
         return view('admin.banners.edit', [
-            'banners' => $banners
+            'banner' => $banner
         ]);
     }
 
@@ -54,9 +54,9 @@ class BannersController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, $banners)
+    public function update(Request $request, $banner)
     {
-        $banners = Banners::findOrFail($banners);
+        $banners = Banner::query()->firstOrFail();
         $banners->update($request->all());
     }
 

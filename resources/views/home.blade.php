@@ -5,29 +5,20 @@
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <!-- Slide 1 -->
+            @foreach($banners as $banner )
             <div class="swiper-slide">
                 <div class="content">
-                    <p class="banner-title select-disable fw-lighter">{{ $banners->title }}</p>
-                    <p class="banner-subtitle select-disable">{{ $banners->sub_title }}</p>
-                    <a href="#" class="button-1">{{ $banners->button_1 }}</a>
-                    <a href="#" class="button-2">{{ $banners->button_2 }}</a>
+                    <p class="banner-title select-disable fw-lighter">{{ $banner->title }}</p>
+                    <p class="banner-subtitle select-disable">{{ $banner->sub_title }}</p>
+                    <a href="#" class="button-1">{{ $banner->button_1 }}</a>
+                    <a href="#" class="button-2">{{ $banner->button_2 }}</a>
                 </div>
                 <img class="select-disable"
                     src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/slide-1.jpg') }}"
                     alt="Slide 1">
             </div>
+            @endforeach
             <!-- Slide 2 -->
-            <div class="swiper-slide">
-                <div class="content">
-                    <p class="banner-title select-disable">{{ $banners->title_2 }}</p>
-                    <p class="banner-subtitle pb-5 pt-2 select-disable">{{ $banners->sub_title_2 }}</p>
-                    <a href="#" class="button-1">{{ $banners->button_1_2 }}</a>
-                    <a href="#" class="button-2">{{ $banners->button_2_2 }}</a>
-                </div>
-                <img class="select-disable"
-                    src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/slide-2.jpg') }}"
-                    alt="Slide 2">
-            </div>
         </div>
         <!-- Navigation Buttons -->
         <div class="swiper-button-next"></div>
@@ -43,7 +34,7 @@
                     <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-3.jpg') }}"
                         class="custom-image" alt="Custom Image">
                     <div class="icon-overlay">
-                        <i class="fa-solid fa-play icon-borders" onclick="openVideoModal()"></i>
+                        <i class="fa-solid fa-play icon-borders  image-link" onclick="openVideoModal()"></i>
                         <!-- Font Awesome Video İkonu -->
                     </div>
                 </div>
@@ -72,12 +63,13 @@
         </div>
         <div class="custom-flex">
             <div class="custom-group">
-                <div class="custom-image-container">
-                    <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-2.jpg') }}"
-                        class="custom-image" alt="Custom Image">
-                    <div class="icon-overlay">
-                        <i class="fa-regular fa-images icon-borders" onclick="openGalleryModal()"></i>
-                        <!-- Font Awesome Galeri İkonu -->
+                <div class="popup-gallery my-5">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6 mt-3">
+                            <a href="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-3.jpg') }}" class="project-gallery">
+                                <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-3.jpg') }}">
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="custom-links">
@@ -105,12 +97,14 @@
         </div>
         <div class="custom-flex">
             <div class="custom-group">
-                <div class="custom-image-container">
-                    <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-3.jpg') }}"
-                        class="custom-image" alt="Custom Image">
-                    <div class="icon-overlay">
-                        <i class="fa-regular fa-images icon-borders" onclick="openGalleryModal()"></i>
-                        <!-- Font Awesome Galeri İkonu -->
+
+                <div class="popup-gallery my-5">
+                    <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-6 mt-3">
+                                <a href='{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-3.jpg') }}' class="project-gallery">
+                                    <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-3.jpg') }}">
+                                </a>
+                            </div>
                     </div>
                 </div>
                 <div class="custom-links">
@@ -151,25 +145,13 @@
 </div>
 
 <!-- Galeri Modal -->
-<div id="galleryModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeGalleryModal()">&times;</span>
-        <div class="gallery">
-            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-1.jpg') }}"
-                alt="Gallery Image 1">
-            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-2.jpg') }}"
-                alt="Gallery Image 2">
-            <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/pic-3.jpg') }}"
-                alt="Gallery Image 3">
-        </div>
-    </div>
-</div>
+
 <section id="section2">
     <div class="chef-area">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-6">
-                <div class="chef-picture">
-                    <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/chef.jpg') }}"
+                <div class="chef-picture image-link">
+                    <img src="{{$aboutUs->getFirstMediaUrl('logo') }}"
                         alt="Gallery Image 1">
                 </div>
             </div>
@@ -200,11 +182,11 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-3  ">
                     <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                        <div class="custom-image-container">
+                        <div class="custom-image-container image-link">
                             <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/parallax-pic-1.jpg') }}"
-                                class="custom-image" alt="Custom Image">
+                                class="custom-image  " alt="Custom Image">
                             <div class="icon-overlay">
-                                <i class="fa-regular fa-images icon-borders" onclick="openGalleryModal()"></i>
+                                <i class="fa-regular fa-images icon-borders" ></i>
                             </div>
                         </div>
                         <div class="menu-1-settings">
@@ -218,9 +200,9 @@
                     <div class="d-flex flex-column justify-content-center align-items-center text-center">
                         <div class="custom-image-container">
                             <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/parallax-pic-2.jpg') }}"
-                                class="custom-image" alt="Custom Image">
+                                class="custom-image image-link" alt="Custom Image">
                             <div class="icon-overlay">
-                                <i class="fa-regular fa-images icon-borders" onclick="openGalleryModal()"></i>
+                                <i class="fa-regular fa-images icon-borders" ></i>
                             </div>
                         </div>
                         <div class="menu-1-settings">
@@ -234,9 +216,9 @@
                     <div class="d-flex flex-column justify-content-center align-items-center text-center">
                         <div class="custom-image-container">
                             <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/parallax-pic-3.jpg') }}"
-                                class="custom-image" alt="Custom Image">
+                                class="custom-image image-link" alt="Custom Image">
                             <div class="icon-overlay">
-                                <i class="fa-regular fa-images icon-borders" onclick="openGalleryModal()"></i>
+                                <i class="fa-regular fa-images icon-borders" ></i>
                             </div>
                         </div>
                         <div class="menu-1-settings">
@@ -252,7 +234,7 @@
                             <img src="{{ \Illuminate\Support\Facades\Vite::asset('/resources/images/parallax-pic-4.jpg') }}"
                                 class="custom-image" alt="Custom Image">
                             <div class="icon-overlay">
-                                <i class="fa-regular fa-images icon-borders" onclick="openGalleryModal()"></i>
+                                <i class="fa-regular fa-images icon-borders" ></i>
                             </div>
                         </div>
                         <div class="menu-1-settings">

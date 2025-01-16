@@ -20,6 +20,7 @@ export default defineConfig({
             '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
             'jquery': path.resolve(__dirname, 'node_modules/jquery'),
             '~swiper': path.resolve(__dirname, 'node_modules/swiper'),
+            'magnificPopup': path.resolve(__dirname, 'node_modules/magnific-popup'),
 
         }
     },
